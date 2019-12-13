@@ -15,7 +15,7 @@ filters:
       files: # The events of the contracts listed below can be combined together at this address.
         - path: ./contracts/SampleKCT.sol
           contractName: SampleKCT
-          compilerVersion: 0.4.18
+          compilerVersion: 0.4.25
 
 provider:
   type: webSocket
