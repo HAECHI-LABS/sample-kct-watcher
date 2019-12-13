@@ -10,15 +10,15 @@ const useStyles = makeStyles(theme => ({
       margin: theme.spacing(4, 4)
     },
   }));
-  
+
 
 function MetaInfoPaper() {
     const classes = useStyles();
 
     return <Paper className={classes.root}>
         <Typography>
-        You are now listening ERC20 Contract Event.
-        For more information: 
+        You are now listening KCT Contract Event.
+        For more information:
         <a href="https://github.com/haechi-labs/" target="_blank" >
             <GoMarkGithub />
         </a>

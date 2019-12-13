@@ -29,7 +29,7 @@ function HeaderMaterial() {
     <HeaderMaterialBlock elevation={0}>
       <Toolbar>
         <StyledTypography variant="h3">
-          Henesis ERC20 Watcher
+          Henesis KCT Watcher
         </StyledTypography>
         {/* <a href="https://github.com/haechi-labs/" target="_blank" >
           <StyledAccountButton >

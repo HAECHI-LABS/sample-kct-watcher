@@ -4,8 +4,8 @@ import TableRow from '@material-ui/core/TableRow';
 import CustomChip from './CustomChip';
 import Button from '@material-ui/core/Button';
 
-function getEtherscanUrl(event) {
-    return `https://etherscan.io/tx/${event.transactionHash}`
+function getKlaytnScopeUrl(event) {
+    return `https://baobab.scope.klaytn.com/tx/${event.transactionHash}`
 }
 
 function describeEvent(event) {
@@ -23,7 +23,7 @@ export default function ({events,page,rowsPerPage}) {
         <TableRow key={index}>
             <TableCell>
                 <Button
-                    href={getEtherscanUrl(event)}
+                    href={getKlaytnScopeUrl(event)}
                     target="_blank"
                 >
                     {event.event}
@@ -32,7 +32,7 @@ export default function ({events,page,rowsPerPage}) {
             <TableCell>
                 {describeEvent(event)}
             </TableCell>
-            <TableCell> 
+            <TableCell>
                 {event.blockMeta.blockNumber}
             </TableCell>
         </TableRow>
