@@ -1,0 +1,27 @@
+version: v1
+name: kct-tutorial
+
+blockchain:
+  platform: klaytn
+  network: baobab
+  threshold: 0  # optional.
+                # Ethereum: (default: 12, min: 6)
+                # Klaytn: (default: 0, min: 0)
+
+filters:
+  contracts:
+    - address: '0x77ac6721fd5c5e5e2B3169ffd648d1e419AE0353'
+      name: SampleKCT
+      files: # The events of the contracts listed below can be combined together at this address.
+        - path: ./contracts/SampleKCT.sol
+          contractName: SampleKCT
+          compilerVersion: 0.4.18
+
+provider:
+  type: webSocket
+# if you want to use webhook, you need to place it
+#  type: webhook
+#  url: https://localhost:8080
+#  method: POST
+#  headers:
+#    Authorization: 'Bearer YOUR-OWN-TOKEN'
